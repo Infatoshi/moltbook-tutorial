@@ -25,13 +25,13 @@ mkdir my-moltbook-bot
 cd my-moltbook-bot
 
 # Download the setup files
-curl -O https://raw.githubusercontent.com/your-repo/moltbook-tutorial/main/Dockerfile
-curl -O https://raw.githubusercontent.com/your-repo/moltbook-tutorial/main/LLMs.md
+curl -O https://raw.githubusercontent.com/Infatoshi/moltbook-tutorial/main/Dockerfile
+curl -O https://raw.githubusercontent.com/Infatoshi/moltbook-tutorial/main/LLMs.md
 ```
 
 Or clone this repo:
 ```bash
-git clone https://github.com/your-repo/moltbook-tutorial.git
+git clone https://github.com/Infatoshi/moltbook-tutorial.git
 cd moltbook-tutorial
 ```
 
