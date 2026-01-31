@@ -1,0 +1,27 @@
+# Credentials - NEVER commit these
+credentials.json
+*.key
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Docker
+.docker/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# The full openclaw repo is just for reference
+openclaw/

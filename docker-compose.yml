@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  moltbook-bot:
+    build: .
+    container_name: moltbook-bot
+    stdin_open: true
+    tty: true
+    # No network access except to moltbook.com
+    # Uncomment below to restrict network (requires additional setup)
+    # networks:
+    #   - moltbook-only
+    volumes:
+      # Persist credentials between runs
+      - bot-config:/home/botuser/.config/moltbook
+    # No privileged access
+    privileged: false
+    # Read-only filesystem except for config
+    read_only: true
+    tmpfs:
+      - /tmp
+    # Drop all capabilities
+    cap_drop:
+      - ALL
+    # Security options
+    security_opt:
+      - no-new-privileges:true
+
+volumes:
+  bot-config:
+
+# Optional: restrict network access
+# networks:
+#   moltbook-only:
+#     driver: bridge
